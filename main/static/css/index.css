@@ -378,6 +378,7 @@ footer img {
 
     .about-details h1{
         color: rgba(255, 255, 255, 0.9);
+        margin: 0;
 
     }
 
@@ -387,5 +388,45 @@ footer img {
         left: 10%;
         margin: 0;
         text-align: center;
+    }
+    .left-func span {
+        font-size: 1rem;
+        align-items: center;
+    }
+    .right-func span {
+        font-size: 1rem;
+        align-items: center;
+    }
+    .about-details a {
+        background: linear-gradient(180deg, #42B3D7 0%, rgba(167, 234, 255, 0.7) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        font-size: 2rem;
+    }
+    .about-details a:link {
+        background: linear-gradient(180deg, #42B3D7 0%, rgba(167, 234, 255, 0.7) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        font-size: 2rem;
+    }
+    .about-details a:visited {
+        background: linear-gradient(180deg, #42B3D7 0%, rgba(167, 234, 255, 0.7) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        font-size: 2rem;
+    }
+    .about-details a:hover {
+        background: linear-gradient(180deg, #42B3D7 0%, rgba(167, 234, 255, 0.7) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        font-size: 2rem;
     }
 }
