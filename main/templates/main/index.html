@@ -16,15 +16,15 @@
         <header>
             <img src="{% static 'images/miku-logo.png'%}" alt="лого">
             <nav>
-                <a>МикуБот</a>
-                <a>Функционал</a>
+                <a onclick="document.querySelector('#about-bot').scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'});" >МикуБот</a>
+                <a onclick="document.querySelector('#functional').scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'});">Функционал</a>
                 <a>О нас</a>
             </nav>
         </header>
 
 
         <main>
-            <h1>
+            <h1 id="about-bot">
                 Что такое МикуБот?
             </h1>
             <div class="about-mobile" v-if="mobile">
@@ -58,48 +58,46 @@
                     Перейти
                 </a>
             </div>
-            <h1 class="text-center">Функционал бота</h1>
+            <h1 class="text-center" id="functional">Функционал бота</h1>
 
             <div class="func-box">
                 <div class="left-func">
-                    <span>
-                        "Давай поиграем"
-                    </span>
-                    <span>
-                        "Переведи на японский"
-                    </span>
-                    <span>
-                        "Дай послушать свои песни"
-                    </span>
-                    <span>
-                        "Кинь видосик"
-                    </span>
-                    <span>
-                        "Создать напоминание"
-                    </span>
-                    <span>
-                        "Моды со мной"
-                    </span>
-
-
+                    {% for i in functions|slice:":6"  %}
+                    <details class="about-func">
+                        <summary>
+                            <span>
+                                {{i.name}}
+                            </span>
+                        </summary>
+                        <div>
+                            <p>
+                                {{i.description}}
+                            </p>
+                           
+                        </div>
+                    </details>
+                    {% endfor %}
                 </div>
                 <div class="separator">
-
                 </div>
                 <div class="right-func">
-                    <span>
-                        "Давай поговорим"
-                    </span>
-                    <span>
-                        "Кинь картинку"
-                    </span>
-                    <span>
-                        "Погода"
-                    </span>
-                    <span>
-                        "Прикольные аниме"
-                    </span>
-                </div>
+                    {% for i in functions|slice:"6:"  %}
+                    <details class="about-func">
+                        <summary>
+                            <span>
+                                {{i.name}}
+                            </span>
+                        </summary>
+                        <div>
+                            <p>
+                                {{i.description}}
+                            </p>
+                           
+                        </div>
+                    </details>
+                    {% endfor %}    
+
+            </div>
             </div>
             <h1 class="text-center">
                 И МНОГО НОВОГО ВПЕРЕДИ!

@@ -249,6 +249,37 @@ footer img {
     height: 100%;
 }
 
+.about-func {
+    background: none;
+    text-align: center;
+}
+.about-func summary {
+background: none;
+width: 100%;
+line-height: 3rem;
+height: max-content;
+}
+.about-func summary span {
+line-height: 22px;
+
+}
+.about-func[open] summary {
+left: auto ;
+
+}
+.about-func div {
+text-align: center;
+background: linear-gradient(134.42deg, rgba(66, 179, 215, 0.6) 25.25%, rgba(255, 255, 255, 0) 94.77%);
+
+position: relative;
+left: 16%;
+border-radius: 30px;
+word-wrap: break-word;
+height: max-content;
+padding: 10%;
+width: 50%;
+}
+
 @media (max-width: 1024px) {
     html, main {
         width: 100vw !important;
@@ -389,9 +420,16 @@ footer img {
         margin: 0;
         text-align: center;
     }
+    .left-func {
+        margin-top: 15%;
+    }
     .left-func span {
         font-size: 1rem;
         align-items: center;
+    }
+    .right-func {
+        justify-content: unset;
+        margin-top: 15%;
     }
     .right-func span {
         font-size: 1rem;
@@ -429,4 +467,5 @@ footer img {
         text-fill-color: transparent;
         font-size: 2rem;
     }
+
 }
