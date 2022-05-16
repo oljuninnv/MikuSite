@@ -1,33 +1,87 @@
-<!DOCTYPE html>
-{% load static %} 
+<!DOCTYPE html> {% load static %}
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/index.css'%}?{% now "U" %}">
+    <link rel="stylesheet" href="{% static 'css/index.css'%}?{% now " U " %}">
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <title>MikuBot|Telegram</title>
+    <title>MikuBot | Telegram | О нас</title>
 </head>
+
 <body>
-        <div class="page" id="page">
-            <header>
-                <img src="{% static 'images/miku-logo.png'%}" alt="лого">
-                <nav>
-                    <a href="/" >Главная</a>
-                    <a href="/about-us">О нас</a>
-                </nav>
-            </header>
-    
-    
-            <main>
-                
-            </main>
-    
-    
-            <footer>
-                <img src="{% static 'images/footer-img.png'%}" alt="">
-            </footer>
-        </div>
+    <div class="page" id="page">
+        <header>
+            <img src="{% static 'images/miku-logo.png'%}" alt="лого">
+            <h1 v-if="mobile" class="header-title">
+                <span class="gradient">Мику</span>Бот
+            </h1>
+            <nav>
+                <a href="/">Главная</a>
+                <a href="/about-us">О нас</a>
+            </nav>
+        </header>
+
+
+        <main>
+            <h1 class="text-center">О нас</h1>
+
+            <h1 class="title">
+                Слова главного разработчика
+            </h1>
+            <div class="about-us-box">
+                <p class="gradient">
+                    Я, простой студент, изучающий программирование и играющий в бесконечное лето! У меня много планов, стремлений и амбиций... Я хочу чтобы у всех желающих была возможность провести время с Мику, так что отдаю вам ее в ваши крепкие объятия, не обижайте ее
+                    и будте счастливы!
+                </p>
+            </div>
+            <h1 class="title">
+                Команда
+            </h1>
+            <h2 class="sub-title">
+                Руководитель проекта
+            </h2>
+            <div class="about-us-box">
+                <h1>
+                    Степан Купряшин
+                </h1>
+                <p>
+                    Оказал огромнуюю помощь в разработке идеи, создании проекта: как сайта, так и бота.А так же в основном играл роль генератора идей
+                </p>
+                <img onclick="window.open('https://vk.com/banderak')" src="{% static 'images/vk-logo.png'%}" alt="vk-logo" />
+            </div>
+            <h2 class="sub-title">Главный разработчик</h2>
+            <div class="about-us-box">
+                <h1>
+                    Никита Олюнин
+                </h1>
+                <p>
+                    Являеться организатором данного проекта, а так же его главным разработчиком. Он просто крутой и как бы этим все сказано. КРУТОЙ! ПОНЯТНО?!!
+                </p>
+                <img onclick="window.open('https://vk.com/olyunin96')" src="{% static 'images/vk-logo.png'%}" alt="vk-logo" />
+            </div>
+            <h2 class="sub-title">
+                Дизайнер
+            </h2>
+            <div class="about-us-box">
+                <h1>
+                    Константин Васильев
+                </h1>
+                <p>
+                    Ну он тут тупа чета делал поэтому можно его впихнуть сюда ну почему бы и нет...? Пусть будет! Ну он дезигнер да, но по факту, ленивый хуй ПОДРОЧИТЕ ПОЖАЛУЙСТА((
+                </p>
+                <img onclick="window.open('https://vk.com/kakoy_yura_uspakoysa')" src="{% static 'images/vk-logo.png'%}" alt="vk-logo" />
+            </div>
+        </main>
+
+
+        <footer>
+            <img src="{% static 'images/footer-img.png'%}" alt="">
+        </footer>
+    </div>
+    <script src="{% static 'js/index.js' %}?{% now " U " %}"></script>
+
 </body>
+
 </html>
