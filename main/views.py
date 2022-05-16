@@ -6,3 +6,6 @@ from .models import BotFunctions
 def index(request):
     functions = BotFunctions.objects.values()
     return render(request,'main/index.html',{'functions':functions})
+
+def about(request):
+    return render(request,'main/about_us.html')
