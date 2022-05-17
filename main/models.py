@@ -45,3 +45,12 @@ class Pictures(models.Model):
         verbose_name = "Картинки"
     def __str__(self) -> str:
         return f"{self.url} - {self.tags} - {self.coment}"
+
+class Anime(models.Model):
+    urls = models.TextField(db_column = 'urls',null = False,verbose_name='Ссылка на сайт с аниме(Aniu)')
+    tags = models.TextField(db_column = 'tag',null = False,verbose_name='Жанр аниме')
+
+    class Meta:
+        verbose_name = "Аниме"
+    def __str__(self) -> str:
+        return f"{self.urls } - {self.tags}"
