@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import BotFunctions,Dialogs,Videos,Pictures
+from .models import BotFunctions,Dialogs,Videos,Pictures,Anime
 # Register your models here.
 @admin.register(BotFunctions)
 class BFAdmin(admin.ModelAdmin):
@@ -16,4 +16,7 @@ class VideosAdmin(admin.ModelAdmin):
 @admin.register(Pictures)
 class PicturesAdmin(admin.ModelAdmin):
     search_fields = ['url__startswitch','tags__startswitch','coment__startswitch']
-    
+
+@admin.register(Anime)
+class AnimeAdmin(admin.ModelAdmin):
+    search_fields = ['urls__startswitch','tags__startswitch']
