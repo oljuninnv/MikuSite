@@ -240,6 +240,20 @@ form textarea {
     height: auto;
 }
 
+form input[type="submit"] {
+    background: #0e279ffa;
+    width: 30%;
+    text-align: center;
+    left: calc(50% - 30% / 2);
+    position: relative;
+    font-size: 2rem;
+    padding: 0%;
+    cursor: pointer;
+    color: #eaebc4;
+}
+
+
+
 footer {
     position: relative;
     height: 40vh;
@@ -251,6 +265,33 @@ footer {
 footer img {
     object-fit: contain;
     height: 100%;
+}
+
+.donat{
+    outline: none;
+    border: none;
+    position: absolute;
+    text-align: center;
+    width: 117px;
+    height: 94px;
+    left: 421px;
+    top: 150px;
+    border-radius: 20px;
+
+
+}
+
+.footer-description{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 88px;
+    line-height: 103px;
+    text-align: center;
+    top: none;
+
+color: #FFFFFF;
+
 }
 
 .about-func {
@@ -577,5 +618,16 @@ h2.sub-title {
         margin-top: auto;
         margin-bottom: 2%;
         line-height: normal;
+    }
+    form input[type="submit"] {
+        background: #0e279ffa;
+        width: 50vw;
+        text-align: center;
+        left: calc(50% - 50vw / 2);
+        position: relative;
+        font-size: 2rem;
+        padding: 0%;
+        cursor: pointer;
+        color: #eaebc4;
     }
 }
