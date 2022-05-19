@@ -114,15 +114,26 @@
         </main>
 
 
-        <footer>
+        <footer v-if="!mobile">
             <img src="{% static 'images/footer-img.png'%}" alt="">
+            <img src="{%static 'images/miku-url.png'%}" id="qr-code-footer">
+
             <div class="footer-description">
-                МикуБот
-                2022
+                <span>МикуБот</span>
+                <span class = "after-footer-description">2022</span>
                 <button class="donat">
                     <img src="{% static 'images/donat.png'%}" alt="">
                 </button>
             </div>
+        </footer>
+        <footer v-else id="mob-footer"> 
+            <div class="footer-description">
+                <span>2022</span>
+                <h2>МикуБот</h2>
+            </div>
+            <img src="{%static 'images/footer-img-mobile.png'%}" alt="" id="mob-img-footer">
+            <img src="{%static 'images/Group 3.png'%}" alt="" id="mob-donat">
+            <img src="{%static 'images/Group 4.png'%}" alt="" id="mob-fot-url">
         </footer>
     </div>
 

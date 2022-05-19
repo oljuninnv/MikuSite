@@ -274,7 +274,7 @@ footer img {
     text-align: center;
     width: 117px;
     height: 94px;
-    left: 421px;
+    left: 1px;
     top: 150px;
     border-radius: 20px;
 
@@ -282,15 +282,36 @@ footer img {
 }
 
 .footer-description{
+    position: absolute;
+    width: 200px;
+    height: 53px;
+    left: 350px;
+    top: 15px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFFFFF;
+
+
+
+}
+
+.after-footer-description{
+    position: absolute;
+    width: 170px;
+    height: 23px;
+    left: 170px;
+    top: 1px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 88px;
-    line-height: 103px;
+    font-size: 42px;
+    line-height: 52px;
     text-align: center;
-    top: none;
-
-color: #FFFFFF;
+    color: rgba(255, 255, 255, 0.5);
 
 }
 
@@ -396,6 +417,15 @@ h2.sub-title {
     width: 30%;
     left: calc(50% - 30% / 2);
     cursor: pointer;
+}
+
+#qr-code-footer {
+    object-fit: contain;
+    width: 30%;
+    height: 80%;
+    position: absolute;
+    right: 0;
+    top: 10%;
 }
 
 @media (max-width: 1024px) {
@@ -629,5 +659,51 @@ h2.sub-title {
         padding: 0%;
         cursor: pointer;
         color: #eaebc4;
+    }
+
+    #mob-img-footer {
+        object-fit: cover;
+        height: 54%;
+        width: 30%;
+        position: relative;
+        top: -8vh;
+        
+    }
+
+    #mob-footer{
+        width: 100vw;
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        align-content: center;
+        flex-direction: row;
+    }
+
+    #mob-donat{
+        object-fit: contain;
+        height: 29%;
+        top: -1vh;
+        position: relative;
+    }
+
+    #mob-fot-url{
+        object-fit: contain;
+        height: 29%;
+        top: -1vh;
+        position: relative;
+    }
+
+    .footer-description {
+        left: 40%;
+        line-height: normal;
+        top:  3%;
+        font-size: 2rem;
+    }
+    .footer-description span {
+        font-size: 2rem;
+    }
+    .footer-description h2 {
+        font-size: 2rem;
     }
 }
