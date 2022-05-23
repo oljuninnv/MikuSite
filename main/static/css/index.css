@@ -27,7 +27,7 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 14vh;
 }
 
@@ -47,11 +47,12 @@ header nav a {
     font-style: normal;
     font-weight: 400;
     font-size: 1.3rem;
-    line-height: 38px;
+    line-height: 5%;
     /* identical to box height */
     /* color: #607d8b; */
     color: black;
     cursor: pointer;
+    
 }
 
 header img {
@@ -90,7 +91,7 @@ main h1 {
     font-size: 3rem;
     position: relative;
     left: 2%;
-    line-height: 130px;
+    line-height: 20vh;
 }
 
 .about-bot {
@@ -256,7 +257,7 @@ form input[type="submit"] {
 
 footer {
     position: relative;
-    height: 40vh;
+    height: 41vh;
     margin-top: auto;
     width: 100vw;
     background: linear-gradient(180deg, #13768C 0%, rgba(16, 168, 201, 0.48) 100%);
@@ -272,26 +273,27 @@ footer img {
     border: none;
     position: absolute;
     text-align: center;
-    width: 117px;
-    height: 94px;
-    left: 1px;
-    top: 150px;
-    border-radius: 20px;
+    width: 16vh;
+    height: 14vh;
+    left: 7%;
+    top: 23vh;
+    border-radius: 10%;
+
 
 
 }
 
 .footer-description{
     position: absolute;
-    width: 200px;
-    height: 53px;
-    left: 350px;
-    top: 15px;
+    width: 15%;
+    height: 10%;
+    left: 28%;
+    top: 6%;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 200;
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 7vh;
+    line-height: -1%;
     text-align: center;
     color: #FFFFFF;
 
@@ -301,15 +303,15 @@ footer img {
 
 .after-footer-description{
     position: absolute;
-    width: 170px;
-    height: 23px;
-    left: 170px;
-    top: 1px;
+    width: 25vh;
+    height: 20%;
+    left: 86%;
+    top: 6%;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 42px;
-    line-height: 52px;
+    font-size: 7vh;
+    line-height: -1%;
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
 

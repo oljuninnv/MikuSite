@@ -1,7 +1,5 @@
 from datetime import date
-from unicodedata import name
 from django.db import models
-from numpy import positive
 
 # Create your models here.
 

@@ -122,3 +122,11 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+EMAIL_HOST = 'smtp.beget.com'
+EMAIL_HOST_USER = 'e5608nn9@miku-bot.ru'
+EMAIL_HOST_PASSWORD = 'SK_and_ON!'
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True
+SERVER_EMAIL = "e5608nn9@miku-bot.ru"
+DEFAULT_FROM_EMAIL = "e5608nn9@miku-bot.ru"
